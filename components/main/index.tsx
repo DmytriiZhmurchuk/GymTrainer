@@ -1,7 +1,16 @@
 import React, {FC} from 'react';
 import {View, Text, Button, StyleSheet, TouchableHighlight} from 'react-native';
-import {ButtonPrimary} from '../Buttons';
+import {ButtonPrimary} from '../buttons';
+//mport {NavigationFunctionComponent} from 'react-native-navigation';
+import {useNavigation} from '@react-navigation/native';
+import {Navigation} from 'react-native-navigation';
+
 const HomeScreen: FC = () => {
+  const navigation = useNavigation();
+  const navigateToClientsList = () => {
+    //navigation.navigate('Details');
+  };
+
   return (
     <View style={styles.container}>
       <View style={styles.buttonContainer}>
